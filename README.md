@@ -1,5 +1,8 @@
 # WebShop RLSD — Qwen2.5-3B, 4×A100 80GB
 
+> Shared cross-method evaluation: [exact common140 tasks and unchanged sampling](docs/SHARED_EVALUATION140.md).
+
+
 独立的 **Qwen2.5-3B-Instruct RLSD（GRPO＋token优势自蒸馏）** 复现仓库，直接使用 [SDAR 公开实现](https://github.com/ZJU-REAL/SDAR) 中的原版RLSD WebShop配方。Teacher是当前Actor权重的无梯度评分视角，只额外读取上游静态WebShop skill；不是另一个冻结模型。不启用Route-SFT、RETHINK、Analyzer、局部hint或付费API。另一个模型尺寸独立发布，不在本仓库顺序训练。
 
 ## 固定配方
